@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\ChampionshipController;
-use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -9,6 +7,6 @@ Route::get('/', function () {
 });
 
 
-Route::post('/teams', [TeamController::class, 'store']);
-Route::get('/teams', [TeamController::class, 'index']);
-Route::post('/championship/start', [ChampionshipController::class, 'start']);
+Route::get('/login', function (Request $request) {
+    return ['teste', 'teste'];
+});
